@@ -34,7 +34,7 @@ const twoSum = (nums, target) => {
 };
 
 const nums = [2, 7, 11, 15];
-const target = 6;
+const target = 9;
 
 console.time('test');
 console.log(twoSum(nums, target));
