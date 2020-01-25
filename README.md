@@ -8,4 +8,5 @@
 
 | 题号 | 标题 | 难度 | 题目链接 | 源码 |
 | -- | -- | -- | -- | -- |
-| 0001 | 两数之和 | ★★★☆☆ | [LeetCode](https://leetcode-cn.com/problems/two-sum/) | [Source](./solutions/2-pointer/s0001_two-sum.js)
+| 0001 | 两数之和 | ★★★☆☆ | [LeetCode](https://leetcode-cn.com/problems/two-sum/) | [Source](./solutions/2-pointer/s0001_two-sum.js) |
+| 0015 | 三数之和 | ★★★★☆ | [LeetCode](https://leetcode-cn.com/problems/3sum/) | [Source](./solutions/2-pointer/s0015_3sum) |
