@@ -6,7 +6,7 @@
 /**
  * 解法一: 快排
  * T(n): O(nlgn)
- * 执行用时: 68 ms, 击败 65.22%
+ * 执行用时: 76 ms, 击败 25.95%
  */
 // const merge = (nums1, m, nums2, n) => {
 //     const arr = [...nums1.splice(0, m), ...nums2].sort((a, b) => a - b);
@@ -16,26 +16,30 @@
 /**
  * 解法二: 双指针
  * T(n): O(n)
- * 执行用时: 68 ms, 击败 65.22%
+ * 执行用时: 64 ms, 击败 81.80%
  */
 const merge = (nums1, m, nums2, n) => {
-    let i = 0,
-        j = 0;
-    while (i + j < m + n + 2) {
-        console.log(i, j, i + j);
-        if (nums2[j] < nums1[i]) {
-            for (let t = m + n - 1; t > i; --t) nums1[t] = nums1[t - 1];
-            nums1[i] = nums2[j];
-            i++;
-            j++;
-        } else i++;
+    if (m == 0) return nums1.splice(0, n, ...nums2), nums2;
+    if (n === 0) return nums1;
+
+    let i = 0;
+    let j = 0;
+    const result = [];
+
+    while (i < m && j < n) {
+        if (nums1[i] < nums2[j]) result.push(nums1[i++]);
+        else result.push(nums2[j++]);
+        if (i === m) result.push(...nums2.slice(j, n));
+        else if (j === n) result.push(...nums1.slice(i, m));
     }
-    // for (let t = j; t < n; ++t) nums1[m + t] = nums2[t];
+
+    nums1.splice(0, m + n, ...result);
+    return result;
 };
 
 console.time('test');
-const nums1 = [-1, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0];
-const nums2 = [-1, -1, 0, 0, 1, 2];
+const nums1 = [1, 2, 3, 0, 0, 0],
+    nums2 = [2, 5, 6];
 merge(nums1, nums1.length - nums2.length, nums2, nums2.length);
 console.log(nums1);
 console.timeEnd('test');
