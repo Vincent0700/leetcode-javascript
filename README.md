@@ -13,13 +13,15 @@
 | 0001 | 两数之和 | ★☆☆ | [LeetCode][s0001] | [Source](./solutions/s0001_two-sum.js) | 95.44% |
 | 0015 | 三数之和 | ★★☆ | [LeetCode][s0015] | [Source](./solutions/s0015_3sum.js) | 60.20% |
 | 0088 | 合并两个有序数组 | ★☆☆ | [LeetCode][s0088] | [Source](./solutions/s0015_3sum.js) | 81.80% |
+| 0141 | 判断链表是否存在环 | ★☆☆ | - | - | - |
+| 0524 | 最长子序列 | ★★☆ | - | - | - |
 | 0633 | 平方数之和 | ★☆☆ | [LeetCode][s0633] | [Source](./solutions/s0633_sum-of-square-numbers.js) | 98.06% |
 | 0345 | 反转字符串中的元音字母 | ★☆☆ | [LeetCode][s0345] | [Source](./solutions/s0345_reverse-vowels-of-a-string.js) | 99.73% |
 | 0680 | 验证回文字符串 Ⅱ | ★☆☆ | [LeetCode][s0680] | [Source](./solutions/s0680_valid-palindrome-ii.js) | 100.00% |
 
 ## 字典法
 
-元素值作为键，索引作为值，空间换时间
+求满足条件的数组的索引，而条件值唯一，用索引作为值，空间换时间
 
 > 要求：键不能重复
 
