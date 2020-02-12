@@ -12,7 +12,7 @@
 | -- | -- | -- | -- | -- | -- |
 | 0001 | 两数之和 | ★☆☆ | [LeetCode][s0001] | [Source](./solutions/s0001_two-sum.js) | 95.44% |
 | 0015 | 三数之和 | ★★☆ | [LeetCode][s0015] | [Source](./solutions/s0015_3sum.js) | 60.20% |
-| 0088 | 合并两个有序数组 | ★☆☆ | [LeetCode][s0088] | [Source](./solutions/s0015_3sum.js) | 81.80% |
+| 0088 | 合并两个有序数组 | ★☆☆ | [LeetCode][s0088] | [Source](./solutions/s0015_3sum.js) | 99.35% |
 | 0141 | 判断链表是否存在环 | ★☆☆ | - | - | - |
 | 0524 | 最长子序列 | ★★☆ | - | - | - |
 | 0633 | 平方数之和 | ★☆☆ | [LeetCode][s0633] | [Source](./solutions/s0633_sum-of-square-numbers.js) | 98.06% |
@@ -28,6 +28,10 @@
 | 题号 | 标题 | 难度 | 题目链接 | 源码 | 用时击败 |
 | -- | -- | -- | -- | -- | -- |
 | 0001 | 两数之和 | ★☆☆ | [LeetCode][s0001] | [Source](./solutions/s0001_two-sum.js) | 95.44% |
+
+## 贪心算法
+
+保证每次操作都是局部最优的，并且最后得到的结果是全局最优的。
 
 
 [s0001]: https://leetcode-cn.com/problems/two-sum/

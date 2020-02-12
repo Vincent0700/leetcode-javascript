@@ -16,7 +16,7 @@
 /**
  * 解法二: 双指针
  * T(n): O(n)
- * 执行用时: 64 ms, 击败 81.80%
+ * 执行用时: 64 ms, 击败 99.35%
  */
 const merge = (nums1, m, nums2, n) => {
     if (m == 0) return nums1.splice(0, n, ...nums2), nums2;
@@ -29,9 +29,10 @@ const merge = (nums1, m, nums2, n) => {
     while (i < m && j < n) {
         if (nums1[i] < nums2[j]) result.push(nums1[i++]);
         else result.push(nums2[j++]);
-        if (i === m) result.push(...nums2.slice(j, n));
-        else if (j === n) result.push(...nums1.slice(i, m));
     }
+
+    if (i === m) result.push(...nums2.slice(j, n));
+    else if (j === n) result.push(...nums1.slice(i, m));
 
     nums1.splice(0, m + n, ...result);
     return result;
