@@ -20,18 +20,18 @@
  * T(n): Θ(nlgn)
  * 执行用时: 84 ms, 击败 62.86%
  */
-const twoSum = (nums, target) => {
-    nums = nums.map((value, index) => ({ value, index }));
-    nums.sort((a, b) => a.value - b.value);
-    let i = 0,
-        j = nums.length - 1;
-    while (i < j) {
-        const sum = nums[i].value + nums[j].value;
-        if (sum < target) i++;
-        else if (sum > target) j--;
-        else return [nums[i].index, nums[j].index];
-    }
-};
+// const twoSum = (nums, target) => {
+//     nums = nums.map((value, index) => ({ value, index }));
+//     nums.sort((a, b) => a.value - b.value);
+//     let i = 0,
+//         j = nums.length - 1;
+//     while (i < j) {
+//         const sum = nums[i].value + nums[j].value;
+//         if (sum < target) i++;
+//         else if (sum > target) j--;
+//         else return [nums[i].index, nums[j].index];
+//     }
+// };
 
 /**
  * 解法三: 字典
@@ -39,7 +39,7 @@ const twoSum = (nums, target) => {
  * 执行用时: 60 ms, 击败 95.44%
  */
 const twoSum = (nums, target) => {
-    const hashmap = new WeakMap();
+    const hashmap = new Map();
     for (let i = 0; i < nums.length; i++) {
         const num = nums[i];
         const diff = target - num;
