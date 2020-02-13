@@ -37,6 +37,7 @@
 | 题号 | 标题 | 难度 | 题目链接 | 源码 | 用时击败 |
 | -- | -- | -- | -- | -- | -- |
 | 0069 | x的平方根 | ★☆☆ | [LeetCode][s0069] | [Source](./solutions/s0069_sqrtx.js) | 92.90% |
+| 0744 | 寻找比目标字母大的最小字母 | ★☆☆ | [LeetCode][s0744] | [Source](./solutions/s0744_find-smallest-letter-greater-than-target.js) | 92.50% |
 
 
 
@@ -49,3 +50,4 @@
 [s0435]: https://leetcode-cn.com/problems/non-overlapping-intervals/
 [s0455]: https://leetcode-cn.com/problems/assign-cookies/
 [s0680]: https://leetcode-cn.com/problems/valid-palindrome-ii/
+[s0744]: https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/
