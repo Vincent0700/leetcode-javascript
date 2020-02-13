@@ -9,7 +9,7 @@ module.exports = {
     ecmaVersion: 9
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'prettier/prettier': 'error'
+    'no-console': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'prettier/prettier': 2
   }
 }

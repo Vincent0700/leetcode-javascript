@@ -1,9 +1,4 @@
 /**
- * @date 2020/01/25 15:04
- * @link https://leetcode-cn.com/problems/merge-sorted-array/
- */
-
-/**
  * 解法一: 快排
  * T(n): O(nlgn)
  * 执行用时: 76 ms, 击败 25.95%

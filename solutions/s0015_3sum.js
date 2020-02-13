@@ -1,9 +1,4 @@
 /**
- * @date 2020/01/24 19:03
- * @link https://leetcode-cn.com/problems/3sum/
- */
-
-/**
  * 快排，双指针 + 去重
  * T(n): O(n^2)
  * 执行用时: 196 ms, 击败 60.20%

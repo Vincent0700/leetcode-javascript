@@ -1,9 +1,4 @@
 /**
- * @date 2020/01/25 13:34
- * @link https://leetcode-cn.com/problems/reverse-vowels-of-a-string/
- */
-
-/**
  * 双指针
  * T(n): O(n)
  * 执行用时: 72 ms, 击败 99.73%

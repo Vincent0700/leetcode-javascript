@@ -21,17 +21,31 @@
 
 ## 贪心算法
 
-保证每次操作都是局部最优的，并且最后得到的结果是全局最优的。
+局部最优解 => 全局最优解
 
 | 题号 | 标题 | 难度 | 题目链接 | 源码 | 用时击败 |
 | -- | -- | -- | -- | -- | -- |
+| 0435 | 无重叠区间 | ★★☆ | [LeetCode][s0435] | [Source](./solutions/s0435_non-overlapping-intervals.js) | 97.53% |
 | 0455 | 分发饼干 | ★☆☆ | [LeetCode][s0455] | [Source](./solutions/s0455_assign-cookies.js) | 87.43% |
+
+## 二分查找
+
+二分查找也称为折半查找，每次都能将查找区间减半，时间复杂度为 O(lgn)。
+
+> 要求：数组有序
+
+| 题号 | 标题 | 难度 | 题目链接 | 源码 | 用时击败 |
+| -- | -- | -- | -- | -- | -- |
+| 0069 | x的平方根 | ★☆☆ | [LeetCode][s0069] | [Source](./solutions/s0069_sqrtx.js) | 92.90% |
+
 
 
 [s0001]: https://leetcode-cn.com/problems/two-sum/
 [s0015]: https://leetcode-cn.com/problems/3sum/
+[s0069]: https://leetcode-cn.com/problems/sqrtx/
 [s0088]: https://leetcode-cn.com/problems/merge-sorted-array/
 [s0633]: https://leetcode-cn.com/problems/sum-of-square-numbers/
 [s0345]: https://leetcode-cn.com/problems/reverse-vowels-of-a-string/
+[s0435]: https://leetcode-cn.com/problems/non-overlapping-intervals/
 [s0455]: https://leetcode-cn.com/problems/assign-cookies/
 [s0680]: https://leetcode-cn.com/problems/valid-palindrome-ii/

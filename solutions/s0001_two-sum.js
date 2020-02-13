@@ -1,9 +1,4 @@
 /**
- * @date 2020/01/24 11:17
- * @link https://leetcode-cn.com/problems/two-sum/
- */
-
-/**
  * 解法一: 两层 for 循环
  * T(n): O(n^2)
  * 执行用时: 216 ms, 击败 13.53%
