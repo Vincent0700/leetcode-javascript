@@ -44,6 +44,10 @@
 递归和动态规划都是将原问题拆成多个子问题然后求解，他们之间最本质的区别是，动态规划保存了子问题的解，
 避免重复计算。
 
+| 题号 | 标题 | 难度 | 题目链接 | 源码 | 用时击败 |
+| -- | -- | -- | -- | -- | -- |
+| 0070 | 爬楼梯 | ★☆☆ | [LeetCode][s0070] | [Source](./solutions/s0070_climbing-stairs.js) | 78.90% |
+
 [s0001]: https://leetcode-cn.com/problems/two-sum/
 [s0015]: https://leetcode-cn.com/problems/3sum/
 [s0069]: https://leetcode-cn.com/problems/sqrtx/
