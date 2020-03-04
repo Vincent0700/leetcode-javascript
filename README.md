@@ -48,6 +48,12 @@
 | -- | -- | -- | -- | -- | -- |
 | 0070 | 爬楼梯 | ★☆☆ | [LeetCode][s0070] | [Source](./solutions/s0070_climbing-stairs.js) | 78.90% |
 
+## 日常刷题
+
+| 题号 | 标题 | 难度 | 题目链接 | 源码 | 用时击败 |
+| -- | -- | -- | -- | -- | -- |
+| 0896 | 单调数列 | ★☆☆ | [LeetCode][s0896] | [Source](./solutions/s0896_monotonic-array.js) | 95.15% |
+
 [s0001]: https://leetcode-cn.com/problems/two-sum/
 [s0015]: https://leetcode-cn.com/problems/3sum/
 [s0069]: https://leetcode-cn.com/problems/sqrtx/
@@ -59,3 +65,4 @@
 [s0455]: https://leetcode-cn.com/problems/assign-cookies/
 [s0680]: https://leetcode-cn.com/problems/valid-palindrome-ii/
 [s0744]: https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/
+[s0896]: https://leetcode-cn.com/problems/monotonic-array/
