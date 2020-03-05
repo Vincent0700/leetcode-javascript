@@ -47,6 +47,7 @@
 | 题号 | 标题 | 难度 | 题目链接 | 源码 | 用时击败 |
 | -- | -- | -- | -- | -- | -- |
 | 0070 | 爬楼梯 | ★☆☆ | [LeetCode][s0070] | [Source](./solutions/s0070_climbing-stairs.js) | 78.90% |
+| 0053 | 最大子序和 | ★☆☆ | [LeetCode][s0053] | [Source](./solutions/s0053_maximum-subarray.js) | 62.66% |
 
 ## 日常刷题
 
@@ -56,6 +57,7 @@
 
 [s0001]: https://leetcode-cn.com/problems/two-sum/
 [s0015]: https://leetcode-cn.com/problems/3sum/
+[s0053]: https://leetcode-cn.com/problems/maximum-subarray/
 [s0069]: https://leetcode-cn.com/problems/sqrtx/
 [s0070]: https://leetcode-cn.com/problems/climbing-stairs/submissions/
 [s0088]: https://leetcode-cn.com/problems/merge-sorted-array/
