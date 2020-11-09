@@ -1,21 +1,21 @@
 {
-    "name": "leetcode-javascript",
-    "version": "1.0.0",
-    "author": "vincent0700 <wang.yuanqiu007@gmail.com> (https://vincentstudio.info)",
-    "description": "LeetCode solutions written in javascript.",
-    "license": "MIT",
-    "keywords": [
-        "leetcode",
-        "javascript"
-    ],
-    "devDependencies": {
-        "@commitlint/cli": "^8.3.5",
-        "@commitlint/config-conventional": "^8.3.4",
-        "eslint": "^6.8.0",
-        "eslint-config-prettier": "^6.10.1",
-        "eslint-plugin-prettier": "^3.1.2",
-        "husky": "^4.2.3",
-        "lint-staged": "^10.1.2",
-        "prettier": "^1.19.1"
-    }
+  "name": "leetcode-javascript",
+  "version": "1.0.0",
+  "author": "vincent0700 <wang.yuanqiu007@gmail.com> (https://vincentstudio.info)",
+  "description": "LeetCode solutions written in javascript.",
+  "license": "MIT",
+  "keywords": [
+    "leetcode",
+    "javascript"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.2",
+    "prettier": "^1.19.1"
+  }
 }

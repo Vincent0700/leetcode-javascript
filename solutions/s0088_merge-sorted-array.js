@@ -14,28 +14,28 @@
  * 执行用时: 64 ms, 击败 99.35%
  */
 const merge = (nums1, m, nums2, n) => {
-    if (m == 0) return nums1.splice(0, n, ...nums2), nums2;
-    if (n === 0) return nums1;
+  if (m == 0) return nums1.splice(0, n, ...nums2), nums2;
+  if (n === 0) return nums1;
 
-    let i = 0;
-    let j = 0;
-    const result = [];
+  let i = 0;
+  let j = 0;
+  const result = [];
 
-    while (i < m && j < n) {
-        if (nums1[i] < nums2[j]) result.push(nums1[i++]);
-        else result.push(nums2[j++]);
-    }
+  while (i < m && j < n) {
+    if (nums1[i] < nums2[j]) result.push(nums1[i++]);
+    else result.push(nums2[j++]);
+  }
 
-    if (i === m) result.push(...nums2.slice(j, n));
-    else if (j === n) result.push(...nums1.slice(i, m));
+  if (i === m) result.push(...nums2.slice(j, n));
+  else if (j === n) result.push(...nums1.slice(i, m));
 
-    nums1.splice(0, m + n, ...result);
-    return result;
+  nums1.splice(0, m + n, ...result);
+  return result;
 };
 
 console.time('test');
 const nums1 = [1, 2, 3, 0, 0, 0],
-    nums2 = [2, 5, 6];
+  nums2 = [2, 5, 6];
 merge(nums1, nums1.length - nums2.length, nums2, nums2.length);
 console.log(nums1);
 console.timeEnd('test');

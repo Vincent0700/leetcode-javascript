@@ -34,14 +34,14 @@
  * 执行用时: 60 ms, 击败 95.44%
  */
 const twoSum = (nums, target) => {
-    const hashmap = new Map();
-    for (let i = 0; i < nums.length; i++) {
-        const num = nums[i];
-        const diff = target - num;
-        const j = hashmap.get(diff);
-        if (j !== undefined) return [i, j];
-        hashmap.set(num, i);
-    }
+  const hashmap = new Map();
+  for (let i = 0; i < nums.length; i++) {
+    const num = nums[i];
+    const diff = target - num;
+    const j = hashmap.get(diff);
+    if (j !== undefined) return [i, j];
+    hashmap.set(num, i);
+  }
 };
 
 const nums = [2, 7, 11, 15];

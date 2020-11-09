@@ -10,15 +10,15 @@
  * 执行用时: 76 ms, 击败 92.90%
  */
 const mySqrt = (x) => {
-    let left = 0,
-        right = x;
-    while (left <= right) {
-        const mid = left + ((right - left) >> 1);
-        const square = mid * mid;
-        if (square <= x && (mid + 1) * (mid + 1) > x) return mid;
-        else if (square > x) right = mid - 1;
-        else if (square < x) left = mid + 1;
-    }
+  let left = 0,
+    right = x;
+  while (left <= right) {
+    const mid = left + ((right - left) >> 1);
+    const square = mid * mid;
+    if (square <= x && (mid + 1) * (mid + 1) > x) return mid;
+    else if (square > x) right = mid - 1;
+    else if (square < x) left = mid + 1;
+  }
 };
 
 console.time('test');

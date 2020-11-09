@@ -4,14 +4,14 @@
  * 执行用时: 100 ms, 击败 87.43%
  */
 const findContentChildren = (g, s) => {
-    let i = 0;
-    let j = 0;
-    g.sort((a, b) => a - b);
-    s.sort((a, b) => a - b);
-    while (i < g.length && j < s.length) {
-        if (g[i] <= s[j++]) ++i;
-    }
-    return i;
+  let i = 0;
+  let j = 0;
+  g.sort((a, b) => a - b);
+  s.sort((a, b) => a - b);
+  while (i < g.length && j < s.length) {
+    if (g[i] <= s[j++]) ++i;
+  }
+  return i;
 };
 
 const g = [10, 9, 8, 7];

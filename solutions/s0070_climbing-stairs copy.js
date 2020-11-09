@@ -7,12 +7,12 @@
 let len = 3;
 const data = [0, 1, 2];
 const climbStairs = (n) => {
-    if (n < len) return data[n];
-    while (n >= len) {
-        data[len] = data[len - 1] + data[len - 2];
-        len++;
-    }
-    return data[n];
+  if (n < len) return data[n];
+  while (n >= len) {
+    data[len] = data[len - 1] + data[len - 2];
+    len++;
+  }
+  return data[n];
 };
 
 const n = 45;
