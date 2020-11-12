@@ -10,6 +10,6 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'prettier/prettier': 2
+    'prettier/prettier': 'off'
   }
 }
