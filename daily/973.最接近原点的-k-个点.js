@@ -6,7 +6,7 @@
 
 // @lc code=start
 
-var D = (p) => p[0] * p[0] + p[1] * p[1];
+var D = (p) => p[0] ** 2 + p[1] ** 2;
 
 /**
  * @param {number[][]} points
@@ -16,4 +16,4 @@ var D = (p) => p[0] * p[0] + p[1] * p[1];
 var kClosest = function(points, K) {
   return points.sort((a, b) => D(a) - D(b)).slice(0, K);
 };
-// @lc code=end
+// @lc code=endgit
