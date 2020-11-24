@@ -10,6 +10,7 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'off',
-    'no-unused-vars': 'off'
+    'no-unused-vars': 'off',
+    'no-undef': 'off'
   }
 };
