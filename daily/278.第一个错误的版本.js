@@ -1,0 +1,42 @@
+/*
+ * @lc app=leetcode.cn id=278 lang=javascript
+ *
+ * [278] 第一个错误的版本
+ */
+
+// @lc code=start
+/**
+ * Definition for isBadVersion()
+ *
+ * @param {integer} version number
+ * @return {boolean} whether the version is bad
+ * isBadVersion = function(version) {
+ *     ...
+ * };
+ */
+
+/**
+ * @param {function} isBadVersion()
+ * @return {function}
+ */
+var solution = function(isBadVersion) {
+  /**
+   * @param {integer} n Total versions
+   * @return {integer} The first bad version
+   */
+  return function(n) {
+    if (isBadVersion(1)) return 1;
+    let start = 1;
+    let end = n;
+    while (start <= end) {
+      const mid = Math.floor((end + start) / 2);
+      if (!isBadVersion(mid)) start = mid + 1;
+      else if (!isBadVersion(mid - 1)) return mid;
+      else end = mid - 1;
+    }
+  };
+};
+// @lc code=end
+
+const isBadVersion = (n) => n >= 1702766719;
+console.log(solution(isBadVersion)(2126753390));
