@@ -11,9 +11,9 @@
  */
 var groupAnagrams = function(strs) {
   const obj = [];
-  const arr = strs.map((w) => [
-    w,
-    w
+  const arr = strs.map((word) => [
+    word,
+    word
       .split('')
       .sort()
       .join('')
