@@ -21,7 +21,7 @@ var merge = function(intervals) {
       intervals[i - 1] = null;
       intervals.splice(--i, 1);
     } else i++;
-    if (i === 0) i++;
+    if (!i) i++;
   }
   return intervals.filter((t) => t);
 };
