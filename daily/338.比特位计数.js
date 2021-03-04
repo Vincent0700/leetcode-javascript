@@ -12,12 +12,7 @@
 var countBits = function(num) {
   const arr = [];
   for (let i = 0; i <= num; ++i) {
-    arr.push(
-      i
-        .toString(2)
-        .split('')
-        .reduce((acc, cur) => acc + (cur === '1' ? 1 : 0), 0)
-    );
+    arr[i] = (arr[i >> 1] + i) & 1;
   }
   return arr;
 };
